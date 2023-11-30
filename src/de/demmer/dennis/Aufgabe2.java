@@ -16,18 +16,39 @@ public class Aufgabe2 {
 	
 	public static void main(String[] args) {
 		//gibt eine Zahl von 0 bis 1 zurück   Zb. 0.1622566
+//		double rnd = Math.random();
+//		System.out.println(rnd);
+//			
+//		long l = Math.round(0.56334);
+//		System.out.println(l);
+//		
+//		
+//		int i = (int) 3453465365L;
 		
 		
-		double rnd = Math.random();
-		System.out.println(rnd);
+//		 Füllt jeden Wert eines int Arrays zufällig mit 1 oder 0
+		
+		int[] randomArray = new int[150];
 		
 		
-		long l = Math.round(0.56334);
-		System.out.println(l);
+		randomArray[0] = 42;
 		
 		
-		int i = (int) 3453465365L;
 		
+		
+		for (int j = 0; j < randomArray.length; j++) {
+			
+			double rnd = Math.random();
+			long rndLong = Math.round(rnd);
+			int rndInt = (int) rndLong;
+			
+			randomArray[j] = rndInt;
+			
+			//alternativ alles in einer Zeile
+//			randomArray[j] = (int) Math.round(   Math.random()   );
+			
+			
+		}
 		
 		
 		
