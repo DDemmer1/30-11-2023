@@ -12,23 +12,27 @@ public class Aufgabe3 {
 	 */
 	
 	
+	
+	static void reverse(String toReverse) {
+		
+		char[] charArray = toReverse.toCharArray();
+		
+		for (int i = charArray.length-1;  i >= 0  ; i--) {
+			
+			System.out.print(charArray[i]);
+		}
+		
+		
+	}
+	
+	
+	
+	
 	public static void main(String[] args) {
 		
+		reverse("Apfelkuchen");
 		
-		//( Aus "Java" wird "avaJ")
-		
-		String s = "Test";
-		
-		char[] cArr =  "Apfelkuchen".toCharArray();
-		char[] cArr1 =  s.toCharArray();
-		
-		System.out.println(cArr[0]);
-		
-		System.out.print("t");
-		System.out.print("s");
-		System.out.print("e");
-		System.out.print("T");
-		
+
 	}
 
 	
